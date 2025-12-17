@@ -94,6 +94,7 @@ header .headerContent {
     display: flex;
     padding: 0 10px;
     justify-content: space-between;
+    height: 100vh;
 }
 
 header .headerContent .text {
