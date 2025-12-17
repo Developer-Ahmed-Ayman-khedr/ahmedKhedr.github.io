@@ -40,7 +40,7 @@ button {
 
 /* start header */
 
-.container {
+header .container {
     margin: 10px;
     display: flex;
     align-items: center;
@@ -49,23 +49,23 @@ button {
     margin-top: 33px;
 }
 
-.logo {
+header .logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo .companyName a {
+header .logo .companyName a {
     color: #2E476B;
 }
 
-.navigation ul {
+header .navigation ul {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.navigation ul li a {
+header .navigation ul li a {
     /* background-color: aqua; */
     color: white;
     text-decoration: none;
@@ -73,14 +73,14 @@ button {
 
 }
 
-.bookNow {
+header .bookNow {
     border: none;
     background-color: transparent;
 
 }
 
 
-.button img {
+header .button img {
     width: 170px;
     height: 54px;
     border: none;
