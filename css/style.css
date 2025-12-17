@@ -66,7 +66,6 @@ header {
 }
 
 header .container {
-    /* margin: 10px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,17 +86,13 @@ header .logo .companyName a {
 header .navigation ul {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
 }
 
 header .navigation ul li a {
-    /* background-color: aqua; */
     color: white;
     text-decoration: none;
     color: #2E476B;
     padding: 20px 30px;
-    /* background-color: black; */
-
 }
 
 header .bookNow {
@@ -358,7 +353,7 @@ header .headerContent .img {
 
 .popularDestinations .content .card {
     padding: 10px;
-    border: 10px;
+    border: 2px solid #FFFFFF;
     border-radius: 16px;
 }
 
@@ -367,15 +362,14 @@ header .headerContent .img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
-    align-items: center;
+    text-align: left;
     gap: 50px;
 }
 
 .popularDestinations .content .card a .price {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    width: 100%;
 }
 
 .popularDestinations .content .card a .price .bookNow {
@@ -387,3 +381,106 @@ header .headerContent .img {
 /* end content */
 
 /* end popular destinations */
+
+/* start top destinations */
+
+.topDestinations {
+    display: flex;
+    flex-direction: column;
+}
+
+/* start header */
+
+.topDestinations .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 50px;
+}
+
+.topDestinations .header ul li button {
+    border: 1px solid #3D3D3D;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+/* end header */
+
+/* start content */
+
+.topDestinations .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topDestinations .content .left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topDestinations .content .left .img1 {
+    height: 45%;
+}
+
+.topDestinations .content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topDestinations .content .right .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* end content */
+
+/* end top destinations */
+
+/* start testimonial */
+
+.testimonial {
+    display: flex;
+    gap: 10%;
+    margin-top: 50px;
+}
+
+.testimonial .img {
+    width: 45%;
+    height: 539px;
+}
+
+/* .testimonial .img img {
+    height: 539px;
+} */
+
+.testimonial .text {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.testimonial .text h2 {
+    font-size: 56px;
+}
+
+.testimonial .text .said {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around; */
+    border-radius: 14px;
+
+}
+
+.testimonial .text .said p {
+    font-size: 18px;
+}
+
+/* end testimonial */
