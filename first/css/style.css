@@ -90,15 +90,27 @@ body {
 .header .nav .dropDown {
     position: absolute;
     background-color: #f6f6f6;
-    min-width: 200px;
     border-radius: 11px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
     text-align: left;
-    top: 120%;
+    top: 200%;
     right: 0;
     visibility: hidden;
     opacity: 0;
     transition: 0.4s;
+}
+
+.header .nav .dropDown::before {
+    content: "";
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid #f6f6f6;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    /* width: 10px; */
+    position: absolute;
+    bottom: 95%;
+    right: 0;
+    /* z-index: -1; */
 }
 
 .header .nav:hover .dropDown {
@@ -109,6 +121,7 @@ body {
 .header .nav .dropDown a {
     padding: 12px 50px 12px 12px;
     border-radius: 11px;
+    min-width: 200px;
     display: inline-block;
     transition: 0.3s;
 }
@@ -116,6 +129,7 @@ body {
 .header .nav .dropDown a:hover {
     background-color: #f1f1f1;
     transform: translatex(20px);
+    min-width: 180px;
 }
 
 /* end nav menu*/
