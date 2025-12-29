@@ -5,12 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="auther" content="Eng Ahmed Ayman Khedr">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Treloo</title>
 </head>
 
 <body>
-    
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <p>Treloo</p>
+            </div>
+            <div class="links">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#tips">Tips</a></li>
+                        <li><a href="#aletrs">Alerts</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <button type="button" name="blog">Blog</button>
+            </div>
+        </div>
+    </nav>
+    <!-- start hero -->
+    <div class="hero">
+        <div class="container">
+            <div class="text">
+                <h1>Discover Your Life, Travel<br> Where You Want</h1>
+                <p>Would you explore natur paradise in the world, let’s find the best<br> destination in world with us.
+                </p>
+            </div>
+            <div class="menu">
+                <div class="navigation">
+                    <button type="button">
+                        <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+                        Flight
+                    </button>
+                    <button type="button">
+                        <i class="fa-solid fa-hotel"></i>
+                        Hotel
+                    </button>
+                </div>
+                <form action="#" class="booking">
+                    <!-- start distinations in the form -->
+                    <div class="option distinations">
+                        <div class="column 1">
+                            <label for="from">Leaving From</label>
+                            <br>
+                            <select name="from" id="from">
+                                <option value="dubai">Dubai</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
+                        </div>
+                        <div class="column middle">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <div class="column 3">
+                            <label for="to">Going to</label>
+                            <br>
+                            <select name="to" id="to">
+                                <option value="new york">New York</option>
+                                <option value="new york">New York</option>
+                                <option value="new york">New York</option>
+                                <option value="new york">New York</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- end distinations in the form -->
+
+                    <!-- start times -->
+                    <div class="option times">
+                        <div class="column left">
+                            <label class=".label" for="leave">Leave<i class="fa-solid fa-plane fa-sm"></i></label>
+                            <br>
+                            <input type="date" name="leave" id="leave">
+                        </div>
+                        <div class="column middle">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="column right">
+                            <label class=".label" for="return">return<i class="fa-solid fa-plane fa-rotate-180 fa-sm"></i></label>
+                            <br>
+
+                            <input type="date" name="return" id="return">
+                        </div>
+                    </div>
+                    <!-- end times -->
+
+                    <button class="search" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- start hero -->
+
 </body>
-    
+
 </html>
