@@ -541,12 +541,12 @@ select::-ms-expand {
     padding-right: 20%;
 }
 
-.offers .offersContent .column .columnContent .confirmation span{
+.offers .offersContent .column .columnContent .confirmation span {
     color: #000000;
     font-size: 24px;
 }
 
-.offers .offersContent .column .columnContent .confirmation button{
+.offers .offersContent .column .columnContent .confirmation button {
     background-color: #F2F6FF;
     color: #3E86F5;
     border: 2px solid transparent;
@@ -562,3 +562,9 @@ select::-ms-expand {
 
 
 /* end offers */
+
+/* start sale */
+
+.sale {}
+
+/* end sale */
