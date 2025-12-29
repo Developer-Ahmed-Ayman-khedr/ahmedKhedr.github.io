@@ -297,7 +297,6 @@ select {
     /* Vendor prefix for Firefox */
     -moz-appearance: none;
     /* Optional: Add padding to make space if you add a custom arrow via background image */
-    /* padding-right: 30px; */
 
     font-size: 24px;
 
@@ -338,7 +337,6 @@ select::-ms-expand {
 
 .hero .container .menu form .option .column label i {
     color: #3E86F5CC;
-    /* padding-left: 10px; */
 }
 
 .hero .container .menu form .option .column.left label i {
@@ -401,8 +399,6 @@ select::-ms-expand {
     margin-top: 200px;
     display: flex;
     flex-direction: column;
-    /* background-color: #000000;
-    color: white; */
     justify-content: space-around;
     align-items: center;
     gap: 40px;
@@ -477,8 +473,6 @@ select::-ms-expand {
 }
 
 .offers .offersContent .column .rotatedText {
-    /* width: 196px;
-    height: 27px; */
     font-size: 18px;
     letter-spacing: 9px;
     transform: rotate(90deg);
