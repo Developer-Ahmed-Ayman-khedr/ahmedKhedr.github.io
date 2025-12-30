@@ -1,6 +1,11 @@
 /* start rules */
 
 @font-face {
+    font-family: "Poppins-Light";
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
     font-family: "Poppins-Medium";
     src: url(../fonts/Poppins-Medium.ttf);
 }
@@ -565,6 +570,117 @@ select::-ms-expand {
 
 /* start sale */
 
-.sale {}
+.sale .container {
+    margin: 200px 100px 0 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sale .container .img {
+    background-color: #000000;
+    border-radius: 75px;
+    /* overflow: hidden; */
+    width: 480px;
+    height: 800px;
+    position: relative;
+}
+
+.sale .container .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 75px;
+}
+
+.sale .container .hovering {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px 0px #0000001A;
+    border-radius: 35px;
+    z-index: 2;
+    position: absolute;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sale .container .hovering h4 {
+    color: #3E86F5;
+    font-size: 36px;
+    font-family: "Poppins-Bold";
+}
+
+.sale .container .hovering p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Poppins-Light";
+    margin-top: -15px;
+}
+
+.sale .container .hovering.text1 {
+    width: 174px;
+    height: 120px;
+    left: -20%;
+    top: 40%;
+}
+
+.sale .container .hovering.text2 {
+    width: 180px;
+    height: 120px;
+    right: -20%;
+    top: 20px;
+}
+
+.sale .container .hovering.text3 {
+    width: 174px;
+    height: 120px;
+    right: -20%;
+    bottom: 30%;
+}
+
+.sale .container .content {
+    width: 580px;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.sale .container .content h3 {
+    font-size: 48px;
+}
+
+.sale .container .content p {
+    font-size: 20px;
+    font-family: "Poppins-Regular";
+    
+}
+
+.sale .container .content button {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 8px 25px 0px #3E86F540;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 179px;
+    height: 75px;
+    font-size: 20px;
+    font-family: "Poppins-Regular";
+    align-self: flex-start;
+}
+
+.sale .container .content button::before {
+    background-color: #3E86F5;
+}
+
+.sale .container .content button:hover {
+    color: white;
+}
+
+
 
 /* end sale */
