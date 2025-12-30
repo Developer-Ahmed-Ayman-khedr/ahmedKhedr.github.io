@@ -657,7 +657,7 @@ select::-ms-expand {
 .sale .container .content p {
     font-size: 20px;
     font-family: "Poppins-Regular";
-    
+
 }
 
 .sale .container .content button {
@@ -681,6 +681,118 @@ select::-ms-expand {
     color: white;
 }
 
-
-
 /* end sale */
+
+/* start recommindation */
+
+.recommindation .container {
+    margin: 200px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommindation .container h3 {
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+}
+
+.recommindation .container .recommindationNav {
+    width: 333px;
+    height: 46px;
+    display: flex;
+}
+
+.recommindation .container .recommindationNav button {
+    width: 120px;
+    height: 46px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: white;
+    color: #00000080;
+    font-size: 18px;
+    font-family: "Poppins-SemiBold";
+}
+
+.recommindation .container .recommindationNav button:hover {
+    color: #3E86F5;
+}
+
+/* start recommindation Menu */
+
+.recommindation .container .recommindationMenu {
+    /* margin: 200px 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.recommindation .container .recommindationMenu .column {
+    margin: 50px 0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 280px;
+    height: 293px;
+    box-shadow: 4px 4px 25px 0px #0000001A;
+}
+
+.recommindation .container .recommindationMenu .column .img {
+    position: relative;
+}
+
+.recommindation .container .recommindationMenu .column .img img {
+    width: 260px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.recommindation .container .recommindationMenu .column .img .hovering {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-family: "Poppins-Medium";
+}
+
+.recommindation .container .recommindationMenu .column .img .hovering i {
+    color: #F8CE01;
+}
+
+.recommindation .container .recommindationMenu .column h4 {
+    color: #000000;
+    font-size: 18px;
+    font-family: "Poppins-SemiBold";
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.recommindation .container .recommindationMenu .column p {
+    color: #00000080;
+    font-size: 14px;
+    font-family: "Poppins-Medium";
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recommindation .container .recommindationMenu .column p i {
+    color: #FD787B;
+    font-size: 14px;
+}
+
+
+/* end recommindation Menu */
+
+/* end recommindation */
