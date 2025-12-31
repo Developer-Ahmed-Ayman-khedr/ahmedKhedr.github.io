@@ -897,3 +897,96 @@ select::-ms-expand {
 /* end reviewNav */
 
 /* end review */
+
+/* start footer */
+
+.footer .container {
+    margin: 200px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 150px;
+    align-items: center;
+}
+
+/* start content */
+
+.footer .container .content {
+    width: 1180px;
+    height: 500px;
+    text-align: center;
+    background-image: url(../images/footer/71c421395fc25bf9d27ea1b1bec2a63b1da5233d.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .container .content::before {
+    content: "";
+    background: url(../images/footer/71c421395fc25bf9d27ea1b1bec2a63b1da5233d.jpg);
+    inset: 0;
+    opacity: 0.75;
+}
+
+.footer .container .content p {
+    color: #FFFFFF;
+    font-size: 48px;
+}
+
+.footer .container .content button {
+    width: 220px;
+    height: 80px;
+    color: #3E86F5;
+    box-shadow: 4px 8px 25px 0px #3E86F540;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.footer .container .content button::before {
+    background-color: #3E86F5;
+}
+
+.footer .container .content button:hover {
+    color: white;
+}
+
+/* end content */
+
+/* start bottom */
+
+.footer .container .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 20px;
+}
+
+
+.footer .container .bottom p {
+    font-size: 20px;
+    color: #00000080;
+    font-family: "Poppins-Medium";
+    font-weight: 500;
+}
+
+.footer .container .bottom .links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .bottom .links ul li a {
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #000000BF;
+    font-family: "Poppins-Medium";
+    font-weight: 500;
+}
+
+/* end bottom */
+
+/* end footer */
