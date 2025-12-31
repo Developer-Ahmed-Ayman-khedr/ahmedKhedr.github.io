@@ -914,6 +914,8 @@ select::-ms-expand {
 .footer .container .content {
     width: 1180px;
     height: 500px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     text-align: center;
     background-image: url(../images/footer/71c421395fc25bf9d27ea1b1bec2a63b1da5233d.jpg);
     background-position: center;
@@ -923,13 +925,16 @@ select::-ms-expand {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .footer .container .content::before {
     content: "";
-    background: url(../images/footer/71c421395fc25bf9d27ea1b1bec2a63b1da5233d.jpg);
+    background-image: url(../images/footer/image.png);
+    opacity: 0.95;
+    position: absolute;
     inset: 0;
-    opacity: 0.75;
+    z-index: -2;
 }
 
 .footer .container .content p {
