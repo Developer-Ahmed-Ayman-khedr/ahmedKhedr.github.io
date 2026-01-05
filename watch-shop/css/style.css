@@ -1,4 +1,9 @@
 /* start rules */
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(../fonts/JosefinSans-SemiBold.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +12,7 @@
 
 img {
     width: 100%;
+    display: inline-block;
 }
 
 ul {
@@ -18,12 +24,16 @@ li {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 body {
-    font-family: "Poppins-Regular", "Poppins-Bold", "Poppins-SemiBold";
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 button {
@@ -46,4 +56,149 @@ button:hover::before {
     height: 100%;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* end rules */
+
+/* start page navigation */
+
+.pageNavigation {
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    padding: 8px 16px;
+    margin-top: 5px;
+}
+
+.pageNavigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pageNavigation .container .pageIcon {
+    padding: 5px 0;
+}
+
+/* start colapsed navigation */
+
+.pageNavigation .container .colapsedNavigation {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 40%;
+}
+
+/* start Navigation */
+
+.pageNavigation .container .colapsedNavigation .Navigation {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation>li>a {
+    padding: 41px 21px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .drop {
+    position: relative;
+    display: inline-block;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .drop .dropdown {
+    background-color: #FFFFFF;
+    border-radius: 7px 7px 3px 3px;
+    border-top: 3px solid #ff003c;
+    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 170px;
+    transition: 0.3s;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .drop .dropdown li a {
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+    text-align: left;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .drop.latest .latestLink::before {
+    content: "HOT";
+    color: #FFFFFF;
+    background-color: #ff003c;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    padding: 3px 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    position: absolute;
+    bottom: 65%;
+    right: -10%;
+    z-index: 1;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .drop .dropdown::before {
+    content: "";
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid red;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    height: 5px;
+    z-index: 1;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .latest:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .blog:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pageNavigation .container .colapsedNavigation .Navigation .pages:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* end Navigation */
+
+/* start icons */
+
+.pageNavigation .container .colapsedNavigation .icons ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageNavigation .container .colapsedNavigation .icons ul li a {
+    font-size: 16px;
+    padding: 31px 19px;
+}
+
+/* end icons */
+
+/* end colapsed navigation */
+
+/* end page navigation */
