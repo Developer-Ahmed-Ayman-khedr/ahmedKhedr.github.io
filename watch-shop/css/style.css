@@ -15,6 +15,10 @@ img {
     display: inline-block;
 }
 
+.img {
+    display: inline-block;
+}
+
 ul {
     list-style: none;
 }
@@ -40,20 +44,23 @@ button {
     position: relative;
     transition: 0.3s;
     cursor: pointer;
+    z-index: 1;
 }
 
 button::before {
     content: "";
-    width: 100%;
-    height: 0;
+    width: 0%;
+    height: 100%;
     position: absolute;
     bottom: 0;
-    right: 0;
-    transition: 0.3s;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+    transition-timing-function: linear(0, 1 44.7%, 0.898 51.8%, 0.874 55.1%, 0.866 58.4%, 0.888 64.3%, 1 77.4%, 0.98 84.5%, 1);
 }
 
 button:hover::before {
-    height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -202,3 +209,65 @@ button:hover::before {
 /* end colapsed navigation */
 
 /* end page navigation */
+
+/* start hero section */
+
+.heroSection {
+    background-color: #f1f1f1;
+}
+
+.heroSection .container {
+    height: 86.5vh;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* start left side */
+
+.heroSection .container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    max-width: 66%;
+}
+
+.heroSection .container .left h1 {
+    font-size: 94px;
+    font-weight: 700;
+    color: #0B1C39;
+}
+
+.heroSection .container .left button {
+    background-color: #4A4A4B;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px 0px;
+}
+
+.heroSection .container .left button::before {
+    content: "";
+    background-color: #ff003c;
+}
+
+.heroSection .container .left button:hover::before {
+    color: white;
+}
+
+/* end left side */
+
+/* start right side */
+
+.heroSection .container .img {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* end right side */
+
+/* end hero section */
