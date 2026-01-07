@@ -329,8 +329,71 @@ button:hover::before {
     scale: 1.1;
 }
 
-
-
 /* end content */
 
 /* end new ariivals section */
+
+/* start photo gallery */
+
+.photoGallery .container {
+    height: 100vh;
+    gap: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0px;
+}
+
+.photoGallery .container .column.left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.photoGallery .container .column.middle {
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.photoGallery .container .column.right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.photoGallery .container .column .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.photoGallery .container .column .img img {
+    height: 100%;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.photoGallery .container .img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.073);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.photoGallery .container .img:hover::before {
+    background-color: rgba(0, 0, 0, 0.289);
+}
+
+.photoGallery .container .img:hover img {
+    scale: 1;
+}
+
+/* end photo gallery */
