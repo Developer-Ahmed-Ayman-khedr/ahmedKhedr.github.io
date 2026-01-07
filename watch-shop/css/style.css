@@ -271,3 +271,66 @@ button:hover::before {
 /* end right side */
 
 /* end hero section */
+
+/* start new ariivals section */
+
+.newArrivals .container {
+    margin-top: 200px;
+    height: 90vh;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5%;
+}
+
+.newArrivals .container h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* start content */
+
+.newArrivals .container .content {
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.newArrivals .container .content .column a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.newArrivals .container .content .column .img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.newArrivals .container .content .column .img img {
+    transition: 0.5s;
+}
+
+.newArrivals .container .content .column h5 {
+    color: #444444;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newArrivals .container .content .column .productPrice {
+    color: #ff003c;
+}
+
+.newArrivals .container .content .column:hover img {
+    scale: 1.1;
+}
+
+
+
+/* end content */
+
+/* end new ariivals section */
