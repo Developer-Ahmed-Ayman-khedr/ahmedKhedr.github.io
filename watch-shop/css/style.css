@@ -641,6 +641,7 @@ button:hover::before {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 5%;
 }
 
 .links .container .icon p {
@@ -650,7 +651,7 @@ button:hover::before {
 
 .links .container .column {
     flex: 16.5%;
-    max-width: 16.6%;
+    transform: translateY(-10%);
 }
 
 .links .container .column h6 {
