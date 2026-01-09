@@ -680,6 +680,10 @@ button:hover::before {
     color: #999;
 }
 
+.footer .container p span{
+    color: #ff003c;
+}
+
 .footer .container .socialMedia button {
     border: none;
     font-size: 14px;
