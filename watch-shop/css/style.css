@@ -38,6 +38,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    color: #212529;
 }
 
 button {
@@ -537,3 +538,54 @@ button:hover::before {
 /* end VIEW MORE PRODUCTS button */
 
 /* end popular items */
+
+/* start watch of choise */
+
+.watchOfChoise .container {
+    margin-top: 350px;
+    height: 90vh;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+
+.watchOfChoise .container .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 50px;
+}
+
+.watchOfChoise .container .column h2 {
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.watchOfChoise .container .column button {
+    background-color: #ff003c;
+    padding: 15px 30px;
+    width: 50%;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+}
+
+.watchOfChoise .container .column button::before {
+    background-color: #444;
+}
+
+
+
+/* end watch of choise */
+/* start watch of choise reverse */
+
+.watchOfChoise.reverse .container {
+    margin-top: 0px;
+
+}
+
+/* end watch of choise reverse */
+
