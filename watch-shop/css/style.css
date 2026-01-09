@@ -38,6 +38,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    color: #212529;
 }
 
 button {
@@ -329,8 +330,369 @@ button:hover::before {
     scale: 1.1;
 }
 
-
-
 /* end content */
 
 /* end new ariivals section */
+
+/* start photo gallery */
+
+.photoGallery .container {
+    height: 100vh;
+    gap: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0px;
+}
+
+.photoGallery .container .column.left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.photoGallery .container .column.middle {
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.photoGallery .container .column.right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.photoGallery .container .column .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.photoGallery .container .column .img img {
+    height: 100%;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.photoGallery .container .img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.073);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.photoGallery .container .img:hover::before {
+    background-color: rgba(0, 0, 0, 0.289);
+}
+
+.photoGallery .container .img:hover img {
+    scale: 1;
+}
+
+/* end photo gallery */
+
+/* start popular items */
+
+.popularItems .container {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3%;
+}
+
+/* start header */
+
+.popularItems .container h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0b1c39;
+}
+
+.popularItems .container .headerContent {
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+}
+
+/* end header */
+
+/* start content */
+
+.popularItems .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 0px 10%;
+}
+
+.popularItems .container .content .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3%;
+}
+
+.popularItems .container .content .card .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.popularItems .container .content .card .img::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 3px solid #ff003c;
+    z-index: 1;
+}
+
+.popularItems .container .content .card button {
+    background-color: #ff003c;
+    width: 100%;
+    height: 0%;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.popularItems .container .content .card .icon {
+    color: #444;
+    font-size: 28px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.popularItems .container .content .card .img:hover button {
+    opacity: 1;
+    visibility: visible;
+    height: 15%;
+}
+
+.popularItems .container .content .card .img:hover .icon {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popularItems .container .content .card .cardContent {
+    padding: 30px;
+}
+
+.popularItems .container .content .card .cardContent h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.popularItems .container .content .card .cardContent .productPrice {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529;
+    text-align: center;
+}
+
+/* end content */
+
+/* start VIEW MORE PRODUCTS button */
+
+.popularItems .container .viewMoreProducts {
+    background-color: #ff003c;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.popularItems .container .viewMoreProducts::before {
+    content: "";
+    background-color: #444;
+}
+
+/* end VIEW MORE PRODUCTS button */
+
+/* end popular items */
+
+/* start watch of choise */
+
+.watchOfChoise .container {
+    margin-top: 350px;
+    height: 90vh;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+
+.watchOfChoise .container .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 50px;
+}
+
+.watchOfChoise .container .column h2 {
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.watchOfChoise .container .column button {
+    background-color: #ff003c;
+    padding: 15px 30px;
+    width: 50%;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+}
+
+.watchOfChoise .container .column button::before {
+    background-color: #444;
+}
+
+
+
+/* end watch of choise */
+/* start watch of choise reverse */
+
+.watchOfChoise.reverse .container {
+    margin-top: 0px;
+
+}
+
+/* end watch of choise reverse */
+
+/* start info section */
+
+.info {
+    padding: 70px 0;
+}
+
+.info .container {
+    max-width: 1140px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff003c;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    flex: 33.3%;
+}
+
+.info .container .column {
+    max-width: 33.3%;
+}
+
+.info .container .column i {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.info .container .column h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.info .container .column p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0 0 20px 0;
+}
+
+/* end info section */
+
+/* start links section */
+
+.links {
+    padding: 70px 0;
+}
+
+.links .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links .container .icon p {
+    margin: 40px 0;
+    color: #999;
+}
+
+.links .container .column {
+    flex: 16.5%;
+    max-width: 16.6%;
+}
+
+.links .container .column h6 {
+    font-size: 24px;
+    color: #212529;
+}
+
+.links .container .column ul li {
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* end links section */
+
+/* start footer section */
+
+.footer .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container p {
+    margin: 40px 0;
+    color: #999;
+}
+
+.footer .container .socialMedia button {
+    border: none;
+    font-size: 14px;
+    color: #212544;
+    margin: 0px 4px;
+    background: none;
+    transition: 0.3s;
+}
+
+.footer .container .socialMedia button:hover {
+    color: #ff003c;
+    transform:rotateY(180deg);
+}
+
+
+/* end footer section */
