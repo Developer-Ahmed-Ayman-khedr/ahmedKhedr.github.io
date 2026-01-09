@@ -629,3 +629,39 @@ button:hover::before {
 }
 
 /* end info section */
+
+/* start links section */
+
+.links{
+    padding: 70px 0;
+}
+
+.links .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links .container .icon p {
+    margin: 40px 0;
+    color: #999;
+}
+
+.links .container .column {
+    flex: 16.5%;
+    max-width: 16.6%;
+}
+
+.links .container .column h6 {
+    font-size: 24px;
+    color: #212529;
+}
+
+.links .container .column ul li {
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* end links section */
