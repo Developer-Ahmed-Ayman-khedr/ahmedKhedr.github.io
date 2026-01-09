@@ -632,7 +632,7 @@ button:hover::before {
 
 /* start links section */
 
-.links{
+.links {
     padding: 70px 0;
 }
 
@@ -665,3 +665,34 @@ button:hover::before {
 }
 
 /* end links section */
+
+/* start footer section */
+
+.footer .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container p {
+    margin: 40px 0;
+    color: #999;
+}
+
+.footer .container .socialMedia button {
+    border: none;
+    font-size: 14px;
+    color: #212544;
+    margin: 0px 4px;
+    background: none;
+    transition: 0.3s;
+}
+
+.footer .container .socialMedia button:hover {
+    color: #ff003c;
+    transform:rotateY(180deg);
+}
+
+
+/* end footer section */
