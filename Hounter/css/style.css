@@ -1,5 +1,10 @@
 /* start rules */
 
+@font-face {
+    font-family: "Lexend";
+    src: url(../fonts/Lexend-Regular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -58,3 +63,79 @@ button:hover::before {
 }
 
 /* end rules */
+
+/* start hero section */
+
+.hero .container {
+    display: flex;
+    max-width: 1201px;
+}
+
+/* start nav section */
+
+.hero .container .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+    background-color: blanchedalmond;
+}
+
+/* start icon section */
+
+.hero .container .nav .icon {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1B1C57;
+}
+
+.hero .container .nav .icon .img {
+    width: 36px;
+    height: 36px;
+}
+
+/* end icon section */
+
+/* start navegation section */
+
+.hero .container .nav .navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero .container .nav .navigation .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero .container .nav .navigation .buttons li a {
+    border-radius: 32px;
+    border: 1px dashed white;
+    padding: 8px 16px;
+    color: #F0F3FD;
+
+}
+
+.hero .container .nav .navigation button {
+    background-color: #D1FAE5;
+    border-radius: 32px;
+    border: none;
+    padding: 12px 24px;
+    color: #047857;
+}
+
+
+
+/* end navegation section */
+
+/* end nav section */
+
+/* end hero section */
