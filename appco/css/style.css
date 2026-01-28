@@ -1,0 +1,45 @@
+/* start rules */
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Nunito.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+/* end rules */
