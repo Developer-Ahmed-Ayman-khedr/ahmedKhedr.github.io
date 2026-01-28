@@ -43,3 +43,66 @@ body {
 }
 
 /* end rules */
+
+/* start nav section */
+
+.nav {
+    box-shadow: #0000003b 0px 0px 12px;
+    background-color: #ffffffd4;
+    padding: 6px 0px;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.nav .container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 45%;
+}
+
+.nav .container .icon {
+    padding: 16px 0;
+}
+
+.nav .container .links ul {
+    display: flex;
+}
+
+.nav .container .links ul li a {
+    padding: 15px 5px;
+    color: #051441;
+    position: relative;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav .container .links ul li a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav .container .links ul li a::after {
+    content: "";
+    border-bottom: 2px solid #A60DCF;
+    border-top: 2px solid none;
+    border-right: 2px solid none;
+    border-left: 2px solid none;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.nav .container .links ul li a.home::after {
+    width: 100%;
+}
+
+.nav .container .links ul li a:hover::after {
+    width: 100%;
+}
+
+/* end nav section */
