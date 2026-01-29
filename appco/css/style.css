@@ -35,6 +35,7 @@ a {
 
 body {
     font-family: "Nunito", sans-serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -48,15 +49,17 @@ body {
 /* start nav section */
 
 .nav {
-    box-shadow: #0000003b 0px 0px 12px;
     background-color: #ffffffd4;
+    box-shadow: #0000003b 0px 0px 12px;
     padding: 6px 0px;
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .nav .container {
+    background-color: #ffffffd4;
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -223,3 +226,74 @@ body {
 }
 
 /* end hero section */
+
+/* start features section */
+
+.features .container {
+    display: flex;
+    padding: 79px 0px;
+}
+
+/* .features .container .img {
+    flex: 33%;
+    max-width: 33%;
+} */
+
+.features .container .maincolumn {
+    margin-top: 48px;
+    margin-left: 30px;
+    /* flex: 41%;
+    max-width: 41%; */
+}
+
+.features .container .maincolumn h2 {
+    margin-bottom: 70px;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.features .container .maincolumn .cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.features .container .maincolumn .cards .column {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.features .container .maincolumn .cards .column .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.features .container .maincolumn .cards .column .card .icon {
+    font-size: 30px;
+    background: #E78AE9;
+    background: linear-gradient(90deg, rgba(231, 138, 233, 1) 0%, rgba(146, 110, 248, 1) 100%);
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+.features .container .maincolumn .cards .column .card .cardContent h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #23182c;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.features .container .maincolumn .cards .column .card .cardContent p {
+    color: #212529;
+}
+
+
+
+/* end features section */
