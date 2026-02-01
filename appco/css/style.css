@@ -603,6 +603,63 @@ body {
     width: 100%;
 }
 
-
-
 /* end pricing section */
+
+/* start testimonial section */
+
+.testimonial .container {
+    height: 80vh;
+    margin-top: 400px;
+}
+
+.testimonial .container h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.testimonial .container .cards {
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.testimonial .container .cards .card {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blanchedalmond; */
+}
+
+.testimonial .container .cards .card .img {
+    width: 60px;
+}
+
+.testimonial .container .cards .card a {
+    margin: 10px 0px;
+    color: #6C19F6;
+    font-size: 22px;
+}
+
+.testimonial .container .cards .card p {
+    line-height: 1.7;
+    color: #888;
+    font-size: 18px;
+}
+
+.testimonial .container .cards .card.semiHidden {
+    position: relative;
+}
+
+.testimonial .container .cards .card.semiHidden::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+/* end testimonial section */
