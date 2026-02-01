@@ -663,3 +663,80 @@ body {
 }
 
 /* end testimonial section */
+
+/* start availability section */
+
+.availability {
+    background: #6C19F6;
+    background: linear-gradient(90deg, rgba(108, 25, 246, 1) 0%, rgba(249, 33, 141, 1) 100%);
+}
+
+.availability .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 89vh;
+    position: relative;
+}
+
+.availability .container .topLeft {
+    position: absolute;
+    left: -15%;
+    top: 8%;
+    z-index: 1;
+    animation-name: availabilityAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes availabilityAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.availability .container .bottomLeft {
+    position: absolute;
+    left: -24%;
+    bottom: 0%;
+}
+
+
+.availability .container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    text-align: start;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+.availability .container .column h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.availability .container .column .links {
+    display: flex;
+    gap: 5px;
+}
+
+.availability .container .column a {
+    width: 150px;
+    display: inline-block;
+}
+
+.availability .container .img {
+    width: 60%;
+}
+
+/* end availability section */
