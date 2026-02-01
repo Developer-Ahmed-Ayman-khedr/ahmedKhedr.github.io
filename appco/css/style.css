@@ -450,7 +450,159 @@ body {
     width: 250px;
 }
 
-
-
-
 /* end screenshot section */
+
+/* start pricing section */
+
+.pricing {
+    background-image: url(../photos/pricing.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: -1;
+}
+
+.pricing::before {
+    content: "";
+    background: #F9218D;
+    background: linear-gradient(90deg, rgba(249, 33, 141, 1) 0%, rgba(108, 25, 246, 1) 100%);
+    position: absolute;
+    inset: 0;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+.pricing .container {
+    height: 80vh;
+    position: relative;
+}
+
+.pricing .container h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 70px auto;
+}
+
+.pricing .container .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: aqua; */
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+}
+
+.pricing .container .cards .card {
+    /* background-color: burlywood; */
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing .container .cards .card:hover {
+    box-shadow: 0px 5px 10px #00000029;
+}
+
+.pricing .container .cards .card::after {
+    content: "";
+    background-image: url(../photos/pricing2.png);
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 150px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.pricing .container .cards .card:hover:after {
+    right: -10%;
+    bottom: -10%;
+}
+
+.pricing .container .cards .card .term {
+    color: #6A56A6;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.pricing .container .cards .card .price {
+    color: #6A56A6;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 26px 0px;
+    padding-right: 3px;
+    position: relative;
+}
+
+.pricing .container .cards .card .price span {
+    font-size: 16px;
+}
+
+.pricing .container .cards .card .price::before {
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pricing .container .cards .card .content {
+    font-size: 18px;
+    color: #888;
+}
+
+.pricing .container .cards .card .content li {
+    margin: 15px;
+}
+
+.pricing .container .cards .card a {
+    padding: 20px 40px;
+    background-color: #712fda;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    outline: unset;
+    border: unset;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing .container .cards .card a::before {
+    content: "";
+    background-color: #f9218d;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(.5, 1.6, .4, .7);
+}
+
+.pricing .container .cards .card a:hover::before {
+    width: 100%;
+}
+
+
+
+/* end pricing section */
