@@ -740,3 +740,65 @@ body {
 }
 
 /* end availability section */
+
+/* start contact section */
+
+.contact {
+    border-bottom: 1px solid #FFC9FD;
+    overflow: hidden;
+}
+
+.contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40%;
+    height: 30vh;
+    position: relative;
+
+}
+
+.contact .container .sendBackground {
+    position: absolute;
+    right: -24%;
+    top: -4%;
+    z-index: -1;
+}
+
+.contact .container .rotateAnimation {
+    position: absolute;
+    left: -40%;
+    bottom: -50%;
+    z-index: -1;
+    animation-name: rotateAnimation;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.contact .container h2 {
+    font-size: 50px;
+    font-weight: 700;
+    /* width: 40%; */
+}
+
+.contact .container button {
+    background-color: #F9218D;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+
+/* end contact section */
