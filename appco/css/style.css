@@ -844,6 +844,37 @@ body {
     inset: 0;
 }
 
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .testimonial .container {
+        max-width: 992px;
+    }
+
+    .testimonial .container .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        margin-left: 10px;
+        overflow: hidden;
+    }
+
+    .testimonial .container .cards .card {
+        flex: 40%;
+        max-width: 40%;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial .container .cards .card.semiHidden.second {
+        display: none;
+    }
+}
+
+/* end responsive section */
+
 /* end testimonial section */
 
 /* start availability section */
@@ -921,6 +952,24 @@ body {
     width: 60%;
 }
 
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .availability .container {
+        margin-left: 100px;
+    }
+
+    .availability .container .topLeft {
+        left: 10%;
+    }
+
+    .availability .container .bottomLeft {
+        left: -11%;
+    }
+}
+
+/* end responsive section */
+
 /* end availability section */
 
 /* start contact section */
@@ -982,6 +1031,25 @@ body {
     border-radius: 50px;
     border: 1px solid transparent;
 }
+
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .contact .container {
+        gap: 0%;
+        margin: 0px 100px;
+    }
+
+    .contact .container .rotateAnimation {
+        left: -26%;
+    }
+
+    .contact .container .sendBackground {
+        right: -4%;
+    }
+}
+
+/* end responsive section */
 
 /* end contact section */
 
@@ -1066,5 +1134,20 @@ body {
     line-height: 1.5;
     margin-bottom: 120px;
 }
+
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .footer .container {
+        margin: 30px 100px 0px 100px;
+    }
+
+    .footer .container .row {
+        gap: 0px;
+        /* margin: 0px 100px; */
+    }
+}
+
+/* end responsive section */
 
 /* end footer section */
