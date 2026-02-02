@@ -287,14 +287,16 @@ body {
         /* margin-top: 120px; */
     }
 
-    .hero .container .column h1,
-    p {
+    .hero .container .column h1 {
+        display: none;
+    }
+
+    .hero .container .column p {
         display: none;
     }
 
     .hero .container .img {
         width: 630px;
-        background-color: #888;
         overflow: hidden;
     }
 }
@@ -310,16 +312,10 @@ body {
     padding: 79px 0px;
 }
 
-/* .features .container .img {
-    flex: 33%;
-    max-width: 33%;
-} */
 
 .features .container .maincolumn {
     margin-top: 48px;
     margin-left: 30px;
-    /* flex: 41%;
-    max-width: 41%; */
 }
 
 .features .container .maincolumn h2 {
@@ -370,7 +366,20 @@ body {
     color: #212529;
 }
 
+/* start responsive section */
 
+@media (max-width: 992px) {
+    .features .container .maincolumn .cards {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .features .container .img {
+        display: none;
+    }
+}
+
+/* end responsive section */
 
 /* end features section */
 
@@ -479,6 +488,25 @@ body {
     font-weight: 400;
 }
 
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .service .container .cards {
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+        /* align-items: center; */
+        margin-left: 150px;
+    }
+
+    .service .container .cards .card {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+
+/* end responsive section */
+
 /* end service section */
 
 /* start screenshot section */
@@ -525,6 +553,38 @@ body {
     display: inline-block;
     width: 250px;
 }
+
+/* start responsive section */
+
+@media (max-width: 992px) {
+    .screenshot .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3%;
+        margin-left: 80px;
+        max-width: 992px;
+        height: 100vh;
+    }
+
+    .screenshot .container .text {
+        width: 100%;
+    }
+
+    .screenshot .container .text p {
+        width: fit-content;
+    }
+
+    .screenshot .container .content {
+        margin: 0px 0px;
+        /* margin-left: 185px; */
+    }
+
+    .screenshot .container .content .img {
+        width: 300px;
+    }
+}
+
+/* end responsive section */
 
 /* end screenshot section */
 
@@ -576,7 +636,7 @@ body {
 
 .pricing .container .cards .card {
     background-color: #FFFFFF;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     text-align: center;
     padding: 40px 20px;
     border-radius: 5px;
@@ -707,6 +767,23 @@ body {
     color: #fff;
     box-shadow: 0px 5px 15px rgba(249, 33, 141, 0.4);
 }
+
+/* start responsive section */
+
+/* @media (max-width: 992px) {
+    .pricing .container .cards {
+        flex-wrap: wrap;
+        max-width: 992px;
+        top: 50%;
+    }
+
+    .pricing .container .cards .card {
+        flex: 58%;
+        max-width: 58%;
+    }
+} */
+
+/* end responsive section */
 
 /* end pricing section */
 
