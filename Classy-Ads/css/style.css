@@ -516,3 +516,40 @@ body {
 }
 
 /* end newsletter section */
+
+
+/* start footer section */
+
+footer {
+    padding: 70px 0;
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+footer .container {
+    padding: 0 60px;
+}
+
+footer .container .row {
+    padding: 70px 0;
+    border-bottom: 1px solid #888;
+}
+
+footer .container .row h6 {
+    margin-bottom: 20px;
+}
+
+footer .container .row .col p,
+footer .container .row .col li,
+footer .container .row .col i {
+    color: #888;
+    font-size: 14px;
+}
+
+footer .container .copyRight {
+    padding: 50px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* end footer section */
