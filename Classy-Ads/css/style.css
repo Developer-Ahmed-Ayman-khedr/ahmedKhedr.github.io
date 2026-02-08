@@ -1,15 +1,9 @@
 /* start rules */
 
-:root {
-    --light-green: #30e3ca;
-}
-
-@font-face {
-    font-family: "Nanum Gothic";
-    src: url(https://fonts.gstatic.com/s/nanumgothic/v26/PN_3Rfi-oW3hYwmKDpxS7F_z-7rJxHVIsPV5MbNO2rV2_va-Nv6p.0.woff2) format('woff2');
-    font-style: normal;
-    font-weight: 400;
-}
+/* @font-face {
+    font-family: "";
+    src: url();
+}*/
 
 * {
     padding: 0;
