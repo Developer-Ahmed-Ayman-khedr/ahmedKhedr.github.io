@@ -434,6 +434,17 @@ body {
     color: var(--light-green);
     font-weight: 700;
     text-align: center;
+    position: relative;
+}
+
+.testimonial .container h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    border-bottom: 3px solid #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 .testimonial .container .img {
@@ -481,3 +492,27 @@ body {
 }
 
 /* end blog section */
+
+/* start newsletter section */
+
+.newsletter {
+    background-color: var(--light-green);
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.newsletter .container .row .col form input.form-control {
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background: none;
+    padding-left: 0;
+    box-shadow: unset;
+}
+
+.newsletter .container .row .col form input.btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 0;
+}
+
+/* end newsletter section */
