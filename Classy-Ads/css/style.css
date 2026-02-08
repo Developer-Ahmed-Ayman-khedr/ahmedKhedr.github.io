@@ -445,3 +445,39 @@ body {
 }
 
 /* end testimonial section */
+
+/* start blog section */
+
+.blog {
+    padding: 70px 0;
+}
+
+.blog .container h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.blog .container .card-text.information {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.blog .container .card-text.information a {
+    color: var(--light-green);
+}
+
+.blog .container .card-text.parag {
+    font-size: 14px;
+}
+
+.blog .container .btn {
+    background: var(--light-green);
+    border: unset;
+    border: unset;
+    outline: unset;
+    box-shadow: unset;
+    color: white;
+}
+
+/* end blog section */
