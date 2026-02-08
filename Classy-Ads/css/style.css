@@ -153,6 +153,8 @@ body {
 
 .featured {
     padding: 70px 0px;
+    position: relative;
+    z-index: 1;
 }
 
 .featured .container {
