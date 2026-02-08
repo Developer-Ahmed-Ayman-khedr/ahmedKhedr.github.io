@@ -423,3 +423,25 @@ body {
 }
 
 /* end trending section */
+
+/* start testimonial section */
+
+.testimonial {
+    padding: 70px 0;
+}
+
+.testimonial .container h2 {
+    color: var(--light-green);
+    font-weight: 700;
+    text-align: center;
+}
+
+.testimonial .container .img {
+    width: 100px;
+}
+
+.testimonial .container img {
+    border-radius: 50%;
+}
+
+/* end testimonial section */
