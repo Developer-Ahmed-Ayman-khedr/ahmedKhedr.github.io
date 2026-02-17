@@ -1,0 +1,350 @@
+/* start rules */
+
+:root {
+    --light-green: #30e3ca;
+}
+
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url(https://fonts.gstatic.com/s/nanumgothic/v26/PN_3Rfi-oW3hYwmKDpxS7F_z-7rJxHVIsPV5MbNO2rV2_va-Nv6p.0.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+/* end rules */
+/* start nav section */
+
+.navbar {
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.navbar-brand span {
+    color: var(--light-green);
+    font-weight: 700;
+}
+
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    transition: 0.3s;
+    color: #051441;
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #30e3ca;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link.btn {
+    color: #FFFFFF;
+    background-color: var(--light-green);
+    padding: 8px 12px;
+}
+
+/* end nav section */
+
+
+/* start hero section */
+
+.hero {
+    background-image: url(../photos/hero.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    z-index: -1;
+}
+
+.hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    inset: 0;
+    height: 60vh;
+}
+
+.hero .container {
+    position: relative;
+}
+
+.hero .container h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero .container p {
+    color: rgba(255, 255, 255, 0.418);
+}
+
+/* end hero section */
+
+/* start featured section */
+
+/* start ads section */
+
+.featured .container .listings .card {
+    border: unset;
+    box-shadow: 0 2px 20px -2px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.featured .container .listings .img {
+    height: 150px;
+    overflow: hidden;
+}
+
+.featured .container .listings .card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.featured .container .listings .card .catelog span {
+    background-color: #dedede;
+    color: #000000;
+    font-size: 11px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.featured .container .listings .card .catelog i {
+    color: var(--light-green);
+    padding: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 50%;
+    text-align: center;
+    width: fit-content;
+}
+
+.featured .container .listings .card .catelog i:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.featured .container .listings .card h5 {
+    color: var(--light-green);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.featured .container .listings .card p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.featured .container .listings .card .rating {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* end ads section */
+
+/* start listings section */
+
+.listings .navigation a {
+    background-color: var(--light-green);
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    /* display: inline-block !important; */
+}
+
+/* end listings section */
+
+/* end featured section */
+
+/* start trending section */
+
+.trending {
+    padding: 70px 0;
+
+}
+
+.trending .container .grey p {
+    font-size: 11px;
+    background-color: #dedede;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+.trending .container .grey i {
+    color: #30e3ca;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.trending .container .grey i:hover {
+    color: #FFFFFF;
+    background-color: #FF0000;
+}
+
+.trending .container .card-title {
+    font-size: 16px;
+    color: var(--light-green);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.trending .container .card-text.parag {
+    font-size: 12px;
+}
+
+.trending .container .rating {
+    font-size: 12px;
+}
+
+.trending .container .rating .filled {
+    color: #f89d13;
+    font-size: 12px;
+}
+
+/* end trending section */
+
+/* start testimonial section */
+
+.testimonial {
+    padding: 70px 0;
+}
+
+.testimonial .container h2 {
+    color: var(--light-green);
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial .container h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    border-bottom: 3px solid #30e3ca;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.testimonial .container .img {
+    width: 100px;
+}
+
+.testimonial .container img {
+    border-radius: 50%;
+}
+
+/* end testimonial section */
+
+/* start newsletter section */
+
+.newsletter {
+    background-color: var(--light-green);
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.newsletter .container .row .col form input.form-control {
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background: none;
+    padding-left: 0;
+    box-shadow: unset;
+}
+
+.newsletter .container .row .col form input.btn {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 0;
+}
+
+/* end newsletter section */
+
+
+/* start footer section */
+
+footer {
+    padding: 70px 0;
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+footer .container {
+    padding: 0 60px;
+}
+
+footer .container .row {
+    padding: 70px 0;
+    border-bottom: 1px solid #888;
+}
+
+footer .container .row h6 {
+    margin-bottom: 20px;
+}
+
+footer .container .row .col p,
+footer .container .row .col li,
+footer .container .row .col i {
+    color: #888;
+    font-size: 14px;
+}
+
+footer .container .copyRight {
+    padding: 50px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* end footer section */
